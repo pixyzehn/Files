@@ -166,7 +166,7 @@ public class FileSystem {
                 return name
             }
 
-            let endIndex = name.index(name.endIndex, offsetBy: -`extension`.characters.count - 1)
+            let endIndex = name.index(name.endIndex, offsetBy: -`extension`.count - 1)
             return String(name[..<endIndex])
         }
         
